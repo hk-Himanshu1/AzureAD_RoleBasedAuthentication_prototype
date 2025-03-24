@@ -17,6 +17,10 @@ namespace AzureAD_RoleBasedAuthentication_prototype.Controllers
         {
             return View();
         }
+        public IActionResult AdminDashboard()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

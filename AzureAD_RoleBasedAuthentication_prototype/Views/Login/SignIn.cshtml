@@ -51,15 +51,21 @@
                     <h2 class="text-center mb-4">Login</h2>
 
                     <form asp-action="Login" method="post">
-                        <div class="mb-3">
+                        @* <div class="mb-3">
                             <input class="form-control" placeholder="Username">
                             <span class="text-danger"></span>
                         </div>
                         <div class="mb-3">
                             <input type="password" class="form-control" placeholder="Password">
                             <span class="text-danger"></span>
+                        </div> *@
+
+                        <!-- Sign In and Sign Up buttons -->
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                            <a asp-action="Register" class="btn btn-outline-secondary">Sign Up</a>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Login</button>
+
                         <div class="text-center mt-2">
                             <a asp-action="ForgotPassword" class="text-decoration-none">Forgot Password?</a>
                         </div>
